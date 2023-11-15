@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/icons/favicon.png">
+    <title>Positioning</title>
+    <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../css/master-grid.css">
+    <link rel="stylesheet" href="../css/positioning.css">
+    <link rel="stylesheet" href="../css/master-print.css" media="print">
+  </head>
+  <body>
+    <header id="top">
+      <img src="../images/wd1.png" alt="logo">
+      <h1>Web Design</h1>
+    </header>
+    <nav>
+      <a id="navicon" href="#"><img src="../images/icons/navicon.png" alt="" /></a>
+      <ul>
+        <li><a href="../index.html"><img src="../images/icons/home.png" alt="home"> Home</a></li>
+        <li><a href="fundamentals.html"><img src="../images/icons/document.png" alt="fundamentals"> HMTL Fundamentals</a></li>
+        <li><a href="boxsizing.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Box Sizing</a></li>
+        <li><a href="units.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Units</a></li>
+        <li><a href="customfont.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Custom Font</a></li>
+        <li><a href="colors.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Colors</a></li>
+        <li><a href="positioning.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Positioning</a></li>
+        <li><a href="grid.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Grid</a></li>
+        <li><a href="graphics.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Graphics</a></li>
+        <li><a href="table.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Table</a></li>
+        <li><a href="column.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Column</a></li>
+        <li><a href="form.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Form</a></li>
+        <li><a href="math.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Math</a></li>
+        <li><a href="interactive.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Interactive</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="container">
+        <h2>Static Positioning (normal flow)</h2>
+        <div id="box-1" class="box box-red">
+          <p class="center">1</p>
+        </div>
+        <div id="box-2" class="box box-green">
+          <p class="center">2</p>
+        </div>
+        <div id="box-3" class="box box-blue">
+          <p class="center">3</p>
+        </div>
+        <hr>
+        <span id="box-4" class="box box-inline-block box-light-coral">
+          <p class="center">4</p>
+        </span>
+        <span id="box-5" class="box box-inline-block box-light-green">
+          <p class="center">5</p>
+        </span>
+        <span id="box-6" class="box box-inline-block box-light-sky-blue">
+          <p class="center">6</p>
+        </span>
+      </section>
+      <section class="container">
+        <h2>Relative Positioning (offset from its static position)</h2>
+        <div id="box-7" class="box box-relative-pos box-red">
+          <p class="center">7</p>
+        </div>
+        <div id="box-8" class="box box-relative-pos box-green">
+          <p class="center">8</p>
+        </div>
+        <div id="box-9" class="box box-relative-pos box-blue">
+          <p class="center">9</p>
+        </div>
+        <hr>
+        <span id="box-10" class="box box-inline-block box-relative-pos box-light-coral">
+          <p class="center">10</p>
+        </span>
+        <span id="box-11" class="box box-inline-block box-relative-pos box-light-green">
+          <p class="center">11</p>
+        </span>
+        <span id="box-12" class="box box-inline-block box-relative-pos box-light-sky-blue">
+          <p class="center">12</p>
+        </span>
+      </section>
+      <section id="absolute-container" class="container">
+        <h2>Absolute Positioning & Z-Index</h2>
+        <div id="box-13" class="box box-absolute-pos box-red">
+          <p class="center">13</p>
+        </div>
+        <div id="box-14" class="box box-absolute-pos box-green">
+          <p class="center">14</p>
+        </div>
+        <div id="box-15" class="box box-absolute-pos box-blue">
+          <p class="center">15</p>
+        </div>
+        <hr>
+        <span id="box-16" class="box box-inline-block box-absolute-pos box-light-coral">
+          <p class="center">16</p>
+        </span>
+        <span id="box-17" class="box box-inline-block box-absolute-pos box-light-green">
+          <p class="center">17</p>
+        </span>
+        <span id="box-18" class="box box-inline-block box-absolute-pos box-light-sky-blue">
+          <p class="center">18</p>
+        </span>
+      </section>
+      <section class="container">
+        <h2>Use of Float for layout Positioning</h2>
+        <div id="box-19" class="box box-float-pos box-red">
+          <p class="center">19</p>
+        </div>
+        <div id="box-20" class="box box-float-pos box-green">
+          <p class="center">20</p>
+        </div>
+        <div id="box-21" class="box box-float-pos box-blue">
+          <p class="center">21</p>
+        </div>
+        <hr>
+        <span id="box-22" class="box box-inline-block box-float-pos box-light-coral">
+          <p class="center">22</p>
+        </span>
+        <span id="box-23" class="box box-inline-block box-float-pos box-light-green">
+          <p class="center">23</p>
+        </span>
+        <span id="box-24" class="box box-inline-block box-float-pos box-light-sky-blue">
+          <p class="center">24</p>
+        </span>
+      </section>
+      <section class="container">
+        <h2>Appropriate use of Float Positioning & overflow</h2>
+        <div class="overflow-auto">
+          <img id="moon-img" src="../images/moon-small.JPG">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua. Eu augue ut lectus arcu bibendum. Dignissim diam quis enim 
+            lobortis scelerisque fermentum dui faucibus. Id nibh tortor id aliquet lectus proin. Vel 
+            quam elementum pulvinar etiam non quam lacus. Mauris pharetra et ultrices neque ornare 
+            aenean euismod. Urna et pharetra pharetra massa massa ultricies mi. Bibendum at varius vel 
+            pharetra vel. Risus in hendrerit gravida rutrum quisque non tellus orci. Pellentesque sit 
+            amet porttitor eget dolor morbi non.
+          </p>
+          <p>
+            Id donec ultrices tincidunt arcu non sodales. Hac habitasse platea dictumst quisque sagittis 
+            purus sit. Varius morbi enim nunc faucibus. Mi tempus imperdiet nulla malesuada pellentesque 
+            elit eget. Eu augue ut lectus arcu bibendum at varius vel. Odio morbi quis commodo odio aenean 
+            sed adipiscing diam donec. Non curabitur gravida arcu ac tortor dignissim. Ut tristique et 
+            egestas quis. Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt. 
+            Volutpat est velit egestas dui id. Eget dolor morbi non arcu risus quis varius quam quisque. 
+            Gravida neque convallis a cras semper. Diam quis enim lobortis scelerisque fermentum.
+          </p>
+          <p>
+            Tristique nulla aliquet enim tortor at. Sed ullamcorper morbi tincidunt ornare massa eget 
+            egestas purus viverra. Id diam vel quam elementum. Euismod nisi porta lorem mollis. Dictum 
+            non consectetur a erat nam at lectus urna. Ut enim blandit volutpat maecenas volutpat blandit. 
+            Justo laoreet sit amet cursus sit amet dictum. Ac auctor augue mauris augue neque gravida. 
+            Nullam ac tortor vitae purus faucibus ornare suspendisse sed. Malesuada fames ac turpis 
+            egestas integer eget aliquet nibh praesent. Eros in cursus turpis massa tincidunt dui ut. 
+            Facilisis magna etiam tempor orci eu lobortis elementum. Metus vulputate eu scelerisque 
+            felis imperdiet proin fermentum leo. Praesent tristique magna sit amet purus gravida quis. 
+            Eget aliquet nibh praesent tristique magna sit amet. Platea dictumst quisque sagittis purus 
+            sit amet volutpat consequat. Magnis dis parturient montes nascetur. Et tortor at risus viverra. 
+            Commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <address>
+        <a href="mailto:me@memyselfandi.com">me@memyselfandi.com</a>
+        <br>
+        <a href="tel:+15555555555">(555) 555-5555</a>
+        <p>
+          555 Fake Street South
+          <br>
+          My City, ST 12345
+        </p>
+      </address>
+      <p>© 2023 Web Design 1</p>
+      <div>
+        <a href="#top">Go to Top</a>
+      </div>
+    </footer>
+  </body>
+</html

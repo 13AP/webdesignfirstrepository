@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+body
+{
+  display: grid;
+  /* when the screen size is less than 800px
+    just use the default grid settings */
+}
+
+@media screen and (min-width: 800px)
+{
+  body
+  {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    grid-template-rows: auto;
+
+    grid-template-areas:
+      "header    header"
+      "nav       nav"
+      "section   article"
+      "section   aside"
+      "footer    footer";
+  }
+
+  header 
+  {
+    grid-area: header;
+  }
+
+  nav 
+  {
+    grid-area: nav;
+  }
+
+  section 
+  {
+    grid-area: section;
+  }
+
+  article 
+  {
+    grid-area: article;
+  }
+
+  aside 
+  {
+    grid-area: aside;
+  }
+
+  footer 
+  {
+    grid-area: footer;
+  }
+
+  /* Some of our webpages have a main element
+    instead of the section, article, aside elements */
+  main 
+  {
+    /*
+      The main element doesn't fit in a particular
+      grid area in the grid template, so
+      we have to define the exact locations to put
+      the element
+    */
+
+    /* start at row 3, end at row 4 */
+    grid-row: 3 / 4;  
+
+    /* start at column 1 and span 2 columns
+        (column count includes the the specified column 1)*/
+    grid-column: 1 / span 2;
+  }
+}

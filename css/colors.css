@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+.color-container
+{
+  display: inline-block;
+  border: 1px solid black;
+}
+
+/* https: //html-color.codes/ */
+
+/* Red */
+
+#red-browser-color100
+{
+  background-color: red;
+}
+
+#red-browser-color50
+{
+  background-color: red;
+  opacity: .5;
+}
+
+#red-hex-color
+{
+  background-color: #FF0000;
+}
+
+#red-rgb-color100
+{
+  background-color: rgb(255, 0, 0);
+}
+
+#red-rgba-color100
+{
+  background-color: rgba(255, 0, 0, 1);
+}
+
+#red-rgba-color50
+{
+  background-color: rgba(255, 0, 0, .5);
+}
+
+#red-hsl-color
+{
+  background-color: hsl(0, 100%, 50%);
+}
+
+#red-hsla-color100
+{
+  background-color: hsla(0, 100%, 50%, 1);
+}
+
+#red-hsla-color50
+{
+  background-color: hsla(0, 100%, 50%, .5);
+}
+
+/* green */
+
+#green-browser-color100 
+{
+  background-color: green;
+}
+
+#green-browser-color50 
+{
+  background-color: green;
+  opacity: .5;
+}
+
+#green-hex-color 
+{
+  background-color: #008000;
+}
+
+#green-rgb-color100 
+{
+  background-color: rgb(0, 128, 0);
+}
+
+#green-rgba-color100 
+{
+  background-color: rgba(0, 128, 0, 1);
+}
+
+#green-rgba-color50 
+{
+  background-color: rgba(0, 128, 0, .5);
+}
+
+#green-hsl-color {
+  background-color: hsl(120, 50%, 30%);
+}
+
+#green-hsla-color100 
+{
+  background-color: hsla(120, 50%, 30%, 1);
+}
+
+#green-hsla-color50 
+{
+  background-color: hsla(120, 50%, 30%, .5);
+}
+
+/* blue */
+
+#blue-browser-color100 
+{
+  background-color: blue;
+}
+
+#blue-browser-color50 {
+  background-color: blue;
+  opacity: .5;
+}
+
+#blue-hex-color 
+{
+  background-color: #0000FF;
+}
+
+#blue-rgb-color100
+{
+  background-color: rgb(0, 0, 255);
+}
+
+#blue-rgba-color100 
+{
+  background-color: rgba(0, 0, 255, 1);
+}
+
+#blue-rgba-color50 
+{
+  background-color: rgba(0, 0, 255, .5);
+}
+
+#blue-hsl-color 
+{
+  background-color: hsl(240, 100%, 50%);
+}
+
+#blue-hsla-color100 
+{
+  background-color: hsla(240, 100%, 50%, 1);
+}
+
+#blue-hsla-color50 
+{
+  background-color: hsla(240, 100%, 50%, .5);
+}

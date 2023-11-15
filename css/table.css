@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+/********************************************************************
+    table styling
+********************************************************************/
+caption
+{
+  text-align: left;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 799px)
+{
+  table, tbody, tr, td, th, caption, tfoot
+  {
+    display: block;
+  }
+
+  thead 
+  {
+    display: none;
+  }
+
+  .left
+  {
+    background-color:lightsteelblue;
+  }
+
+  td
+  {
+    border: 1px dotted gray;
+    color: rgb(11, 12, 145);
+    position: relative;
+    padding-left: 30%;
+    min-height: 20px;
+  }
+
+  td::before
+  {
+    content: attr(data-info);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 5px;
+    color: black;
+    font-weight: bold;
+  }
+}
+
+
+@media screen and (min-width: 800px)
+{
+  /* Note in developer tool, the border-spacing and border collapse in the reset
+      stylesheet */
+
+  th, td
+  {
+      padding: 5px;
+  }
+
+  th
+  {
+    background-color:lightsteelblue;
+  }
+
+  tbody tr:nth-child(even)
+  {
+      background-color:powderblue
+  }
+
+  tbody tr:hover
+  {
+      background-color:silver;
+  }
+
+  tfoot > tr
+  {
+      background-color: gray;
+      color: white;
+  }
+
+  table, th, td
+  {
+      border: 1px solid black;
+  }
+
+  /********************************************************************
+      align text in data
+  ********************************************************************/
+
+  .left
+  {
+    text-align: left;
+  }
+
+  .center
+  {
+    text-align: center;
+  }
+
+  .right
+  {
+    text-align: right;
+  }
+
+  tfoot
+  {
+    font-weight: bold;
+  }
+}

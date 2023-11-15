@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/icons/favicon.png">
+    <title>Units</title>
+    <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../css/master-grid.css">
+    <link rel="stylesheet" href="../css/units.css">
+    <link rel="stylesheet" href="../css/master-print.css" media="print">
+  </head>
+  <body>
+    <header id="top">
+      <img src="../images/wd1.png" alt="logo">
+      <h1>Web Design</h1>
+    </header>
+    <nav>
+      <a id="navicon" href="#"><img src="../images/icons/navicon.png" alt="" /></a>
+      <ul>
+        <li><a href="../index.html"><img src="../images/icons/home.png" alt="home"> Home</a></li>
+        <li><a href="fundamentals.html"><img src="../images/icons/document.png" alt="fundamentals"> HMTL Fundamentals</a></li>
+        <li><a href="boxsizing.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Box Sizing</a></li>
+        <li><a href="units.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Units</a></li>
+        <li><a href="customfont.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Custom Font</a></li>
+        <li><a href="colors.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Colors</a></li>
+        <li><a href="positioning.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Positioning</a></li>
+        <li><a href="grid.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Grid</a></li>
+        <li><a href="graphics.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Graphics</a></li>
+        <li><a href="table.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Table</a></li>
+        <li><a href="column.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Column</a></li>
+        <li><a href="form.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Form</a></li>
+        <li><a href="math.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Math</a></li>
+        <li><a href="interactive.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Interactive</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Units</h2>
+      <!-- font sizing -->
+      <section id="font-examples-outer-section">
+        <h2>Font Sizing Examples</h2>
+        <h3>* D1. Default (root) font size (16px)</h3>
+        <p class="font-example-p">
+          This is text with the default font size for this webpage, which 
+          is set to 1em (or, 16px)
+          <br>Note: set in the body (root element) rule on the master css
+          and inherited rule from the p rule on the reset css
+        </p>
+        <section id="font-example-section">
+          <h3>* D2. This section's default font size (24px)</h3>
+          <p class="font-example-p">
+            This is the font size of this section [in light green], which 
+            is set to 1.5em
+            <br>(or, 1.5 * 16px (closest ancestor element, body) = 24px)
+            <br>Note: set in the section element 
+            (id, font-example-section) rule on the units css
+          </p>
+          <h3>* 1. px (1/96 dots per inch)</h3>
+          <p class="font-size-8px font-example-p">
+            This is text with a font size set as 8px
+          </p>
+          <p class="font-size-16px font-example-p">
+            This is text with a font size set as 16px
+          </p>
+          <p class="font-size-32px font-example-p">
+            This is text with a font size set as 32px
+          </p>
+          <h3>* 2. em (inherits the font size set from its 
+            closest ancestor element)</h3>
+          <p class="font-size-halfem font-example-p">
+            This is text with a font size set as .5em
+            <br>(.5 x 24px caculates to 12px)
+          </p>
+          <p class="font-size-1em font-example-p">
+            This is text with a font size set as 1em
+            <br>(1 x 24px caculates to 24px)
+          </p>
+          <p class="font-size-2em font-example-p">
+            This is text with a font size set as 2em
+            <br>(2 of 24px caculates to 48px)
+          </p>
+          <h3>* 3. rem (inherits font size from root element)</h3>
+          <p class="font-size-halfrem font-example-p">
+            This is text with a font size set as .5rem
+            <br>(.5 x 16px caculates to 8px)
+          </p>
+          <p class="font-size-1rem font-example-p">
+            This is text with a font size set as 1rem
+            <br>(1 x 16px caculates to 16px)
+          </p>
+          <p class="font-size-2rem font-example-p">
+            This is text with a font size set as 2rem
+            <br>(2 x 16px caculates to 32px)
+          </p>
+          <h3>* 4. vw (1 letter spacing of the viewport)</h3>
+          <p class="font-size-1vw font-example-p">
+            This is text with a font size set as 1vw
+          </p>
+          <p class="font-size-2vw font-example-p">
+            This is text with a font size set as 2vw
+          </p>
+          <p class="font-size-3vw font-example-p">
+            This is text with a font size set as 3vw
+          </p>
+          <p class="font-size-4vw font-example-p">
+            This is text with a font size set as 4vw
+          </p>
+        </section>
+      </section>
+      <!-- width sizing-->
+      <section id="width-examples-outer-section">
+        <h2>Width Sizing Examples</h2>
+        <p>
+          The box with black border is the outer parent container
+          <br>
+          The box with the red border is the child container
+        </p>
+        <h3>* 1. px</h3>
+        <section id="px-sctn" class="width-section">
+          <p>1p. parent is set to 600px</p>
+          <div id="px-sctn-div200">
+            <p>1a. child is set to 200px</p>
+          </div>
+          <div id="px-sctn-div400">
+            <p>1b. child is set to 400px</p>
+          </div>
+          <div id="px-sctn-div600">
+            <p>1c. child is set to 600px</p>
+          </div>
+          <div id="px-sctn-div700">
+            <p>1d. child is set to 700px</p>
+          </div>
+        </section>
+        <h3>* 2. percent % (percentage of its containing (parent) element)</h3>
+        <section id="pct-sctn" class="width-section">
+          <p>2p. parent is set to 50% of its parent element</p>
+          <div id="pct-sctn-div25">
+            <p>2a. child is set to 25% of its parent element</p>
+          </div>
+          <div id="pct-sctn-div75">
+            <p>2b. child is set to 75% of its parent element</p>
+          </div>
+          <div id="pct-sctn-div100">
+            <p>2c. child is set to 100% of its parent element</p>
+          </div>
+          <div id="pct-sctn-div120">
+            <p>2d. child is set to 120% of its parent element</p>
+          </div>
+        </section>   
+        <h3>* 3. vw (viewport width - relative to 1% of viewport width)</h3>
+        <section id="vp-sctn" class="width-section">
+          <p>3p. parent is set to 50vw (50% the width of the viewport)</p>
+          <div id="vp-sctn-div-25">
+            <p>3a. child is set to 25vw (25% of the width of the viewport</p>
+          </div>
+          <div id="vp-sctn-div-75">
+            <p>3b. child is set to 75vw (75% of the width of the viewport</p>
+          </div>
+          <div id="vp-sctn-div-100">
+            <p>3c. child is set to 100vw (100% of the width of the viewport</p>
+          </div>
+          <div id="vp-sctn-div-120">
+            <p>3d. child is set to 120vw (120% of the width of the viewport</p>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <address>
+        <a href="mailto:me@memyselfandi.com">me@memyselfandi.com</a>
+        <br>
+        <a href="tel:+15555555555">(555) 555-5555</a>
+        <p>
+          555 Fake Street South
+          <br>
+          My City, ST 12345
+        </p>
+      </address>
+      <p>© 2023 Web Design 1</p>
+      <div>
+        <a href="#top">Go to Top</a>
+      </div>
+    </footer>
+  </body>
+</html>

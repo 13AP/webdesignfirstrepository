@@ -1,0 +1,45 @@
+How to insert an emoji
+
+--------
+Windows:
+---------
+
+-- Using shortcut keys to open Emoji picker
+
+  window + .
+
+  or 
+
+  windows + ;
+
+-- Using touch keyboard from the system tray
+
+  1) Right-click on the taskbar
+  2) Select 'Show touch keyboard button'
+  3) Click on the 'Touch Keyboard' icon
+  4) Click on the emoji button to see the list of emojis 🙂
+
+
+-----
+Mac:
+-----
+
+--- Using the default shortcut
+
+  Command + Control + Space
+
+
+------------------------------
+Get emojis from the Web
+-------------------------------
+
+https://unicode-table.com/en/
+
+-- Find can select the emoji you want to use
+
+  Click on the copy button and then paste it into your webpage (♥)
+
+  or 
+
+  Find the appropriate HTML Entity code and type it into the webpage (&#9829;)
+

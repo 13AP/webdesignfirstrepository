@@ -1,0 +1,49 @@
+
+A developer's greatest asset is the ability to be resourceful.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Visual Studio Code
+- https://code.visualstudio.com/docs
+
+Here's a few great sites to use as documenation resource:
+- https://devdocs.io/ (devdocs)
+- https://developer.mozilla.org/en-US/ (mdn)
+- https://www.w3schools.com/ (w3schools)
+
+There is also forums that developers will go for help from other developers, such as
+- https://stackoverflow.com/
+
+Design (structuring)
+- https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure
+
+Unicode
+- https://unicode-table.com/en/
+
+Interactive Cheatsheet
+- https://htmlcheatsheet.com/
+
+Placehoder text (Lorem Ipsum)
+- https://loremipsum.io/
+
+Websafe Fonts
+- https://www.cssfontstack.com/
+
+Validators
+- https://validator.w3.org/
+- https://jigsaw.w3.org/css-validator/
+
+viewport
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Viewport_concepts
+- https://www.w3schools.com/css/css_rwd_viewport.asp
+- https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag
+- viewport sizes
+  - https://viewportsizer.com/devices/
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Nothing is impossible. The word itself says "I'm Possible"! - Audrey Hepburn
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Practice, practice, practice

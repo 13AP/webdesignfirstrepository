@@ -1,0 +1,32 @@
+Visual Studio Code Docs: 
+	> HTML
+		- https://code.visualstudio.com/docs/languages/html
+	> CSS
+		- https://code.visualstudio.com/docs/languages/css
+	> JavaScrip
+		- https://code.visualstudio.com/docs/languages/css
+
+Configure Visual Studio Code
+
+Go to: File > Preference > Settings
+
+	> Commonly Used
+		> Editor: Tab Size = 4 (default)
+		> Editor: Render Whitespace = all
+		> Editor: Insert Spaces = checked (default)
+		> Editor: Word Wrap = off (default)
+	> Text Editor
+		> Detect Indentation = checked (default)
+	> Workbench
+		> Appearance - change this to your liking or leave as is
+			
+
+Shortcuts
+	> Formmatting
+		> Whole Document: Shift + Alt + F
+		> Selection: Ctrl + K Ctrl + F
+
+	> Trigger Suggestions
+		> Ctrl + Space
+
+	

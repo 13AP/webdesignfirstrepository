@@ -1,0 +1,274 @@
+@charset "utf-8";
+
+@import url("reset.css");
+
+@font-face 
+{
+  font-family: Champagne;
+  src: url(../fonts/cac_champagne.ttf) format("truetype"),
+    url(../fonts/cac_champagne.woff) format("woff");
+}
+
+@font-face 
+{
+  font-family: Lobster;
+  src: url(../fonts/Lobster-Regular.ttf);
+}
+
+@font-face 
+{
+  font-family: Rye;
+  src: url(../fonts/Rye-Regular.ttf) format("truetype"),
+    url(../fonts/Rye-Regular.woff) format("woff");
+}
+
+html
+{
+  background-color: whitesmoke;
+}
+
+body 
+{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;  
+  font-size: .75em;
+}
+
+/* navigation styles */
+nav
+{
+  background-color: cornflowerblue;
+  padding: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+}
+
+nav a
+{
+  font-weight: bolder;
+}
+
+nav a img
+{
+  width: 25px;
+  height: 25px;
+  vertical-align: bottom;
+}
+
+nav li
+{
+  list-style-type: none;
+  display: inline-block;
+}
+
+div, main, section, article, aside 
+{
+  margin: 10px;
+  padding: 5px;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+  margin: 5px;
+  padding: 3px;
+}
+
+h1
+{
+  font-family: 'Rye', cursive;
+  font-size: 4em;
+}
+
+h2
+{
+  font-family: 'Lobster', cursive;
+  font-size: 3em;
+}
+
+h3 
+{
+  font-family: 'Champagne', cursive;
+  font-size: 2em;
+}
+
+header 
+{
+  background-color: aliceblue;
+  margin-top: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding: 5px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+p, li, dt, dd 
+{
+  line-height: 1.5em;
+}
+
+#navicon
+{
+  display: none;
+}
+
+nav ul
+{
+  display: flex;
+}
+
+nav ul > li
+{
+  padding: 3px;
+}
+
+ul > li 
+{
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+ol > li 
+{
+  list-style-type: decimal-leading-zero;
+  list-style-position: inside;
+}
+
+dt 
+{
+  font-style: italic;
+}
+
+dd 
+{
+  text-indent: 1em;
+}
+
+ol a, ul a
+{
+  color: midnightblue;
+}
+
+a:link 
+{
+  text-decoration: none;
+}
+
+a:hover 
+{
+  text-decoration: underline;
+}
+
+blockquote
+{
+  quotes: '"' '"';
+  display: inline-block;
+}
+
+blockquote::before
+{
+  content: open-quote;
+}
+
+blockquote::after
+{
+  content: close-quote;
+}
+
+footer
+{
+  font-size: .75rem;
+  background-color: aliceblue;
+  padding: 5px;
+  min-height: 70px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 3px;
+}
+
+/* Fix the item rules
+  - reorder the items because the natural order
+      is not the order in the html we want it to be
+  - we need to explicity specify the order of all the
+      item if we have to reorder
+*/
+footer > address 
+{
+  order: 1;
+}
+
+footer > p
+{
+  order: 3;
+}
+
+footer > div
+{
+  order: 2;
+
+  /* override the current style
+    applied to the div */
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+address > p
+{
+  line-height: 1em;
+}
+
+/* Add a new media query for the screen size up to 799px */
+@media screen and (max-width: 799px)
+{
+  #navicon
+  {
+    display:  block;
+  }
+
+  nav ul
+  {
+    display: none;
+  }
+
+  /* hover on icon and the ul immediately preceding the icon */
+  #navicon:hover+ul, nav ul:hover
+  {
+    display: flex; /* this is needed or it doesn't work */
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+/* create a media query for screen devices with a minimum width of 800px */
+@media screen and (min-width: 800px)
+{
+  /* todo: for our mobile first approach,
+    let's move some styles meant for bigger screen size here
+    and update those styles for smaller screen sizes */
+
+  body
+  {
+    font-size: 1em;
+  }
+
+  nav ul
+  {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  footer
+  {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;  
+  }
+}

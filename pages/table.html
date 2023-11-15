@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/icons/favicon.png">
+    <title>Table</title>
+    <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../css/master-grid.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/master-print.css" media="print">
+  </head>
+  <body>
+    <header id="top">
+      <img src="../images/wd1.png" alt="logo">
+      <h1>Web Design</h1>
+    </header>
+    <nav>
+      <a id="navicon" href="#"><img src="../images/icons/navicon.png" alt="" /></a>
+      <ul>
+        <li><a href="../index.html"><img src="../images/icons/home.png" alt="home"> Home</a></li>
+        <li><a href="fundamentals.html"><img src="../images/icons/document.png" alt="fundamentals"> HMTL Fundamentals</a></li>
+        <li><a href="boxsizing.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Box Sizing</a></li>
+        <li><a href="units.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Units</a></li>
+        <li><a href="customfont.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Custom Font</a></li>
+        <li><a href="colors.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Colors</a></li>
+        <li><a href="positioning.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Positioning</a></li>
+        <li><a href="grid.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Grid</a></li>
+        <li><a href="graphics.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Graphics</a></li>
+        <li><a href="table.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Table</a></li>
+        <li><a href="column.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Column</a></li>
+        <li><a href="form.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Form</a></li>
+        <li><a href="math.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Math</a></li>
+        <li><a href="interactive.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Interactive</a></li>
+      </ul>
+    </nav>
+    <main>
+      <table>
+        <!--table groupings (thead, tbody, tfooter) are optional. It is common to use tbody-->
+        <caption>
+          Plainfield 5-day Weather forecast
+        </caption>
+        <!--table headers-->
+        <thead>
+          <tr>
+            <!-- row and column groupings behave like the merge in excel-->
+            <!-- notice that the table has a total of 4 columns, but notice how the spanning
+              affects the 2 rows (th) in the (thead) -->
+            <th rowspan="2" class="left">Date</th>
+            <!-- Because of the column spanning, the row only has 3 table headers defined -->
+            <th colspan="2" class="center">Temperature (F)</th>
+            <th rowspan="2" class="right">Wind<br />(mph)</th>
+          </tr>
+          <tr>
+            <!-- Because of the row spanning, this row only creates table headers for the 2nd and 3rd column -->
+            <th>High</th>
+            <th>Low</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="left" data-info="date">Wed, 3/15/2023</td>
+            <td class="center" data-info="high">45</td>
+            <td class="center" data-info="low">36</td>
+            <td class="right" data-info="wind">11</td>
+          </tr>
+          <tr>
+            <td class="left" data-info="date">Thu, 3/16/2023</td>
+            <td class="center" data-info="high">41</td>
+            <td class="center" data-info="low">24</td>
+            <td class="right" data-info="wind">8</td>
+          </tr>
+          <tr>
+            <td class="left" data-info="date">Friday, 3/17/2023</td>
+            <td class="center" data-info="high">28</td>
+            <td class="center" data-info="low">12</td>
+            <td class="right" data-info="wind">21</td>
+          </tr>
+          <tr>
+            <td class="left" data-info="date">Sat, 3/18/2023</td>
+            <td class="center" data-info="high">24</td>
+            <td class="center" data-info="low">11</td>
+            <td class="right" data-info="wind">17</td>
+          </tr>
+          <tr>
+            <td class="left" data-info="date">Sun, 3/19/2023</td>
+            <td class="center" data-info="high">37</td>
+            <td class="center" data-info="low">17</td>
+            <td class="right" data-info="wind">12</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="left" data-info="Summary">Average</td>
+            <td class="center" data-info="high">57.8</td>
+            <td class="center" data-info="low">39.8</td>
+            <td class="right" data-info="wind">17</td>
+          </tr >
+        </tfoot>
+      </table>
+    </main>
+    <footer>
+      <address>
+        <a href="mailto:me@memyselfandi.com">me@memyselfandi.com</a>
+        <br>
+        <a href="tel:+15555555555">(555) 555-5555</a>
+        <p>
+          555 Fake Street South
+          <br>
+          My City, ST 12345
+        </p>
+      </address>
+      <p>© 2023 Web Design 1</p>
+      <div>
+        <a href="#top">Go to Top</a>
+      </div>
+    </footer>
+  </body>
+</html>

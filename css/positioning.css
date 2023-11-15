@@ -1,0 +1,235 @@
+@charset "utf-8";
+
+.container 
+{
+  border: 1px solid black;
+  margin: 50px 15px;
+}
+
+div, span 
+{
+  margin: 0;
+  padding: 0;
+}
+
+.box
+{
+  width: 50px;
+  height: 50px;
+}
+
+.box-inline-block
+{
+  /* inline-block to be able to
+      set the width of a span */
+  display: inline-block;
+}
+
+.box-red
+{
+  background-color: red;
+}
+
+.box-green
+{
+  background-color: green;
+}
+
+.box-blue
+{
+  background-color: blue;
+  color: white
+}
+
+.box-light-coral
+{
+  background-color: lightcoral;
+}
+
+.box-light-green
+{
+  background-color: lightseagreen;
+}
+
+.box-light-sky-blue
+{
+  background-color: lightskyblue;
+}
+
+p
+{
+  font-weight: bolder;
+}
+
+.center
+{
+  text-align: center;
+
+  /* the hack to vertical align the content for a 
+      fixed height parent element and there is only 1 line of code 
+        - http://phrogz.net/css/vertical-align/index.html */
+  line-height: 3em;
+}
+
+/* 
+  relative positioning -
+    re-position the element relative to their static position
+*/
+
+.box-relative-pos 
+{
+  /* The position property of the element
+      to be re-positioned
+      has to be set to relative
+   */
+  position: relative;
+}
+
+#box-7 
+{
+  top: 10px;
+  left: 15px;
+}
+
+#box-8 
+{
+  right: -30px;
+}
+
+#box-9 
+{
+  bottom: 25px;
+}
+
+#box-10 
+{
+  top: 10px;
+  left: 15px;
+}
+
+#box-11 
+{
+  top: 50px;
+  left: -25px;
+}
+
+#box-12 
+{
+  top: 75px;
+  left: -115px;
+}
+
+/*
+  Absolute positioning -
+    remove the element from the normal flow
+    and position at the specified locations
+*/
+
+#absolute-container 
+{
+  /*
+    A containing (ancestor parent) element
+      has to be set with a relative position
+   */
+  position: relative;
+}
+
+.box-absolute-pos 
+{
+  /* 
+    The position property of the element
+      to be re-positioned
+      has to be set to absolute
+
+    The final position is relative to its
+      the closest relative positioned ancestor
+      elment
+  */
+  position: absolute;
+}
+
+#box-13 
+{
+  top: 10px;
+  left: 600px;
+}
+
+#box-14 
+{
+  top: 20px;
+  left: 640px;
+}
+
+#box-15 
+{
+  top: 30px;
+  left: 680px;
+}
+
+#box-16 
+{
+  top: 40px;
+  left: 720px;
+  z-index: 2;
+}
+
+#box-17 
+{
+  top: 50px;
+  left: 760px;
+  z-index: 1;
+}
+
+#box-18 
+{
+  top: 60px;
+  left: 800px;
+  z-index: 0;
+}
+
+/*
+  Floating elements
+*/
+
+#box-19 
+{
+  float: right;
+}
+
+#box-20 
+{
+  float: right;
+}
+
+#box-21 
+{
+  clear: right;
+}
+
+#box-22 
+{
+  float: left;
+}
+
+#box-23 
+{
+  float: right;
+}
+
+#box-24 
+{
+  clear: left;
+}
+
+/* Proper float usage & overflow */
+
+#moon-img 
+{
+  float: right;
+}
+
+.overflow-auto 
+{
+  height: 250px;
+  overflow: auto;
+}

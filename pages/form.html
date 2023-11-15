@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/icons/favicon.png">
+    <title>Form</title>
+    <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../css/master-grid.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/master-print.css" media="print">
+  </head>
+  <body>
+    <header id="top">
+      <img src="../images/wd1.png" alt="logo">
+      <h1>Web Design</h1>
+    </header>
+    <nav>
+      <a id="navicon" href="#"><img src="../images/icons/navicon.png" alt="" /></a>
+      <ul>
+        <li><a href="../index.html"><img src="../images/icons/home.png" alt="home"> Home</a></li>
+        <li><a href="fundamentals.html"><img src="../images/icons/document.png" alt="fundamentals"> HMTL Fundamentals</a></li>
+        <li><a href="boxsizing.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Box Sizing</a></li>
+        <li><a href="units.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Units</a></li>
+        <li><a href="customfont.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Custom Font</a></li>
+        <li><a href="colors.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Colors</a></li>
+        <li><a href="positioning.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Positioning</a></li>
+        <li><a href="grid.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Grid</a></li>
+        <li><a href="graphics.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Graphics</a></li>
+        <li><a href="table.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Table</a></li>
+        <li><a href="column.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Column</a></li>
+        <li><a href="form.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Form</a></li>
+        <li><a href="math.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Math</a></li>
+        <li><a href="interactive.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Interactive</a></li>
+      </ul>
+    </nav>
+    <main>
+      <!--
+        forms
+          https://www.w3schools.com/html/html_forms.asp 
+          https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form
+        
+        validation
+          https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation
+       -->
+       <!-- change method to: post or get -->
+      <form id="formID" action="http://mstc.brentapresley.com/htmlformtest.php" method="get">
+        <fieldset class="main-groups">
+          <legend>Controls</legend>
+          <fieldset class="field">
+            <!-- associate label with input with the matching value using the 'for' (label) and 'id'(control) attribputes-->
+            <label class="field-lbl" for="requiredText">*Required Text</label>
+            <input name="fRequiredText" id="requiredText" type="text" required />
+          </fieldset>
+          <fieldset class="field">
+            <label class="field-lbl" for="optionalNumber">3-digit Number Pattern</label>
+            <input name="fOptionalNumber" id="optionalNumber" type="text" pattern="^\d{3}$" 
+              placeholder="nnn" maxlength="3"/>
+          </fieldset>
+          <fieldset class="field">
+            <label class="field-lbl" for="spinBoxNumber">Spin box Number</label>
+            <input name="fSpinBoxNumber" id="spinBoxNumber" type="number" required min="1" max="10"/>
+          </fieldset>
+          <fieldset class="field">
+            <label class="field-lbl" for="email">E-mail</label>
+            <input name="fEmail" id="email" type="email" required/>
+          </fieldset>
+          <fieldset class="field">
+            <label class="field-lbl" for="phone">Phone Number*</label>
+            <input name="fPhoneNumber" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" 
+              pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+          </fieldset>
+          <fieldset class="field">
+            <label class="field-lbl" for="lotsOfText">Lots of Text</label>
+            <textarea name="fLotsOfText" id="lotsOfText"></textarea>
+          </fieldset>
+          <fieldset class="field">
+            <label class="field-lbl" for="yesNoCheckbox">Checkbox (Y/N or T/F)</label>
+            <input name="fYesNoCheckbox" id="yesNoCheckbox" checked type="checkbox" />
+          </fieldset>
+          <fieldset class="field">
+            <label class="field-lbl">Option Selection</label>
+            <label for="yesOption">Yes</label>
+            <input name="fYesNoOption" id="yesOption" type="radio" value="yes" checked />
+            <label for="noOption">No</label>
+            <input name="fYesNoOption" id="noOption" type="radio" value="no" />
+          </fieldset>
+          <fieldset class="field">
+            <label class="field-lbl" for="options">Dropdown Selection List</label>
+            <select name="fOptions" id="options">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3" selected>Option 3</option>
+                <option value="option4">Option 4</option>
+            </select>
+          </fieldset> 
+          <fieldset class="field">
+            <label class="field-lbl" for="states">Data List of States</label>
+            <input name="fStates" id="states" list="stateList" />
+            <datalist id="stateList">
+              <option value="AL">
+              <option value="AK">
+              <option value="AZ">
+              <option value="AR">
+              <option value="CA">
+              <option value="CO">
+              <option value="CT">
+              <option value="DE">
+              <option value="FL">
+              <option value="GA">
+              <option value="HI">
+              <option value="ID">
+              <option value="IL">
+              <option value="IN">
+              <option value="IA">
+              <option value="KS">
+              <option value="KY">
+              <option value="LA">
+              <option value="ME">
+              <option value="MD">
+              <option value="MA">
+              <option value="MI">
+              <option value="MN">
+              <option value="MS">
+              <option value="MO">
+              <option value="MT">
+              <option value="NE">
+              <option value="NV">
+              <option value="NH">
+              <option value="NJ">
+              <option value="NM">
+              <option value="NY">
+              <option value="NC">
+              <option value="ND">
+              <option value="OH">
+              <option value="OK">
+              <option value="OR">
+              <option value="PA">
+              <option value="RI">
+              <option value="SC">
+              <option value="SD">
+              <option value="TN">
+              <option value="TX">
+              <option value="UT">
+              <option value="VT">
+              <option value="VA">
+              <option value="WA">
+              <option value="WV">
+              <option value="WI">
+              <option value="WY">
+            </datalist>
+          </fieldset>
+        </fieldset>
+        <fieldset class="main-groups">
+          <legend>Widgets</legend>
+          <fieldset class="field">
+            <label class="field-lbl" for="date">Date Picker</label>
+            <input name="fDate" id="date" type="date" />
+          </fieldset>
+          <fieldset>
+            <label class="field-lbl" for="time">Time</label>
+            <input name="fTime" id="time" type="time" />
+          </fieldset>
+          <fieldset class="field">
+            <label class="field-lbl" for="sliderBox">Range Slider</label>
+            0
+            <input name="fSliderBox" id="sliderBox" type="range" step="1" min="0" max="10" value="2" />
+            10
+          </fieldset>
+          <fieldset>
+            <label class="field-lbl" for="color">Color Picker</label>
+            <input name="fColor" id="color" type="color" />
+            </fieldset>
+          <fieldset>
+            <label class="field-lbl" for="colorPicker">Color Picker</label>
+            <input name="fColorPicker" id="colorPicker" type="color" />
+          </fieldset>
+          <fieldset>
+            <label class="field-lbl" for="fileSelector">File Selector</label>
+            <input name="fFileSelector" id="fileSelector" type="file" />
+          </fieldset>
+        </fieldset>
+        <fieldset class="main-groups">
+          <legend>Form Buttons</legend>
+          <input type="submit" value="Submit Input Button" />
+          <input type="reset" value="Reset Input Button" />
+          <input type="button" value="Command Input Button" />
+          <button type="button">
+            Custom Command Button
+          </button>
+          <button type="submit">
+            Custom Submit Button
+          </button>
+          <button type="reset">
+            Custom Reset Button
+          </button>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <address>
+        <a href="mailto:me@memyselfandi.com">me@memyselfandi.com</a>
+        <br>
+        <a href="tel:+15555555555">(555) 555-5555</a>
+        <p>
+          555 Fake Street South
+          <br>
+          My City, ST 12345
+        </p>
+      </address>
+      <p>© 2023 Web Design 1</p>
+      <div>
+        <a href="#top">Go to Top</a>
+      </div>
+    </footer>
+  </body>
+</html>

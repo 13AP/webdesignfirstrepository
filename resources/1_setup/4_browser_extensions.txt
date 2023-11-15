@@ -1,0 +1,14 @@
+
+    - Open the Chrome browser
+        - Search for and install
+            - HTML Tree Generator
+            - Debug CSS
+			
+	- Managing browser extensions
+		- On the top right of the browser window
+        - click on the hamburger icon
+            - Chrome: select More Tools > Extensions
+			- Edge: select Exentions
+
+    - To use the extension
+        - Click on the extension button to toggle on/off

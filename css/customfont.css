@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+@font-face 
+{
+  font-family: Cormorant Garamond;
+  src: url(../fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf);
+}
+
+@font-face 
+{
+  font-family: Roboto;
+  src: url(../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf) format("truetype");
+}
+
+main
+{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.custom-serif-font
+{
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.custom-sanserif-font
+{
+  font-family: 'Roboto', sans-serif;
+}
+
+.custom-cursive-font
+{
+  font-family: 'Dancing Script', cursive;
+}
+
+.custom-mono-font
+{
+  font-family: 'Nanum Gothic Coding', monospace;
+}

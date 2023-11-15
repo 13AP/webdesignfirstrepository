@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+.selected {
+    color: blue;
+    font-weight: bold;
+}
+
+.highlight {
+    color: red;
+    font-weight: bold;
+}

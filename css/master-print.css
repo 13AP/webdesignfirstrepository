@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+/* set the page rule 
+  https://developer.mozilla.org/en-US/docs/Web/CSS/@page
+*/
+@page
+{
+  size: portrait;
+  margin: 0.5in;
+}
+
+/* exclude elements not relevant for printing */
+nav, footer
+{
+  display: none;
+}
+
+html
+{
+  /* Make sure the text is readable */
+  font-size: 12pt;
+
+  /*
+    By default, color & background-colors are removed when printing
+    to minimize ink usage.
+
+    optimization only, not color
+  */
+  print-color-adjust: exact;
+
+  /*
+    The print-color-adjust above only defines the optimization
+    and doesn't cause the colors to print,
+    but we can use the webkit to expand on the like-rule
+    to force colors on our webpages
+  */
+  -webkit-print-color-adjust: exact;
+}
+
+main > div, main > section, img
+{
+  /*
+    There are break options that can be set
+    https://developer.mozilla.org/en-US/docs/Web/CSS/break-after
+    https://developer.mozilla.org/en-US/docs/Web/CSS/break-before
+    https://developer.mozilla.org/en-US/docs/Web/CSS/break-inside
+
+    To avoid some items from being cutoff between pages, set the
+    following to avoid breaks inside (when it is able to). If 
+    the content within somehow takes up more than the page, then
+    the break cannot be avoided.
+  */
+  break-inside: avoid;
+}

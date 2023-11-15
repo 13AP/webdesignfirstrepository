@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+main
+{
+  /* This is the minimum column width */
+  column-width: 600px;
+
+  /* if not specified, the default is 1em */
+  column-gap: 20px;
+
+  /* shorthand property is column-rule 
+  column-rule: 1px solid lightsteelblue; */
+  column-rule-width: 1px;
+  column-rule-style: solid;
+  column-rule-color: lightsteelblue;
+  
+  /* A specified # of columns can be specified, but then it is not responsive
+    anymore and a media query will be needed to handle the change.
+    Specifying this somewhat overrides the column-width 
+  columns: 3;*/
+  /*comment this out to see the responsiveness without specifying a column explicitly */
+
+  /* Columns can further be controlled by the break-* properties
+    and the orphans and widows to specify how many lines must be visible
+    below the break or above the break respectively.
+    Otherwise, the default # of lines is 2 for both the orphans and windows. */
+}
+
+main h1
+{
+  /* allow elements to span the columns */
+  column-span: all;
+}
+
+p
+{
+  padding: 5px;
+}
+
+p::first-letter
+{
+  font-size: 2em;
+}

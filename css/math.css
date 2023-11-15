@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+#container 
+{
+  width: 50%;
+  margin: 0 auto;
+  display: grid;
+  gap: 2px;
+
+  grid-template-areas:
+    "heading heading heading heading heading heading heading heading"
+    "leftop op rightop eq answer check skip hintbtn"
+    "counter counter counter counter counter counter counter counter"
+    "feedback feedback feedback feedback feedback feedback feedback feedback"
+    "hint hint hint hint hint hint hint hint";
+}
+
+h1
+{
+  font-size: 3em;
+}
+
+#title
+{
+  grid-area: heading;
+  text-align: center;
+}
+
+#leftoperand
+{
+  grid-area: leftop;
+}
+
+#operator
+{
+  grid-area: op;
+  text-align: right;
+}
+
+#rightoperand
+{
+  grid-area: rightop;
+}
+
+#equal
+{
+  grid-area: eq;
+}
+
+#answer
+{
+  grid-area: answer;
+}
+
+#checkbtn
+{
+  grid-area: check;
+}
+
+#skipbtn
+{
+  grid-area: skip;
+}
+
+#hintbtn
+{
+  grid-area: hintbtn;
+}
+
+#counter
+{
+  grid-area: counter;
+}
+
+#feedback
+{
+  grid-area: feedback;
+}
+
+#hint
+{
+  grid-area: hint;
+}
+
+#feedback, #hint, #counter
+{
+  border: 1px solid black;
+  min-height: 45px;
+}
+
+#leftoperand, #operator, #rightoperand, #equal, #answer, #feedback, #hint, #counter
+{
+  font-size: 2em;
+  text-align: center;
+}
+
+.green
+{
+  color: green;
+}
+
+.red
+{
+  color: red;
+}
+
+#date-container
+{
+  display: flex;
+  align-items: baseline;
+}
+
+#date
+{
+  font-size: .5em;
+}

@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+main
+{
+  /*
+    set the containing (parent) element
+    to display as grid
+
+    the grid applies only to the immediate children
+    elements
+  */
+  display: grid;
+
+  /* define the grid template */
+  grid-template-rows: auto;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+
+  /* define the grid template areas */
+  grid-template-areas:  
+    "top         top          top         top"
+    "firsthalf   firsthalf    lasthalf    lasthalf"
+    "firstfourth secondfourth thirdfourth lastfourth"
+    "bottom      bottom       bottom       bottom";
+}
+
+/* define in what area the elements should be placed */
+.top-full
+{
+  grid-area: top;
+}
+
+.row-first-half
+{
+  grid-area: firsthalf;
+}
+
+.row-last-half
+{
+  grid-area: lasthalf;
+}
+
+.row-first-fourth
+{
+  grid-area: firstfourth;
+}
+
+.row-second-fourth
+{
+  grid-area: secondfourth;
+}
+
+.row-third-fourth
+{
+  grid-area: thirdfourth;
+}
+.row-last-fourth 
+{
+  grid-area: lastfourth;
+}
+
+.last-full 
+{
+  grid-area: bottom;
+}
+

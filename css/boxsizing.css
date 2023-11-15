@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/* 
+  box sizing
+*/
+.box-model 
+{
+  width: 300px;
+  height: 250px;
+  padding: 30px;
+  border: black solid 1px; 
+  margin: 25px;
+}
+
+#content-box
+{
+  background-color:brown;
+  box-sizing: content-box;
+}
+
+#border-box
+{
+  background-color: chartreuse;
+	box-sizing: border-box;
+}

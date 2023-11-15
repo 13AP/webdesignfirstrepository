@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/icons/favicon.png">
+    <title>Math</title>
+    <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../css/master-grid.css">
+    <link rel="stylesheet" href="../css/boxsizing.css">
+    <link rel="stylesheet" href="../css/math.css">
+    <link rel="stylesheet" href="../css/master-print.css" media="print">
+    <!-- attributes: async or defer
+      - async : load javascript with html
+      - defer : load html, then load js (defer if js code immediately references the DOM)
+
+      -- change the value of defer to async and look at the Console in the developer tools.
+      -- there should be an error
+    -->
+    <script src="../js/common.js" defer></script>
+    <script src="../js/math.js" defer></script>
+  </head>
+  <body>
+    <header id="top">
+      <img src="../images/wd1.png" alt="logo">
+      <h1>Web Design</h1>
+    </header>
+    <nav>
+      <a id="navicon" href="#"><img src="../images/icons/navicon.png" alt="" /></a>
+      <ul>
+        <li><a href="../index.html"><img src="../images/icons/home.png" alt="home"> Home</a></li>
+        <li><a href="fundamentals.html"><img src="../images/icons/document.png" alt="fundamentals"> HMTL Fundamentals</a></li>
+        <li><a href="boxsizing.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Box Sizing</a></li>
+        <li><a href="units.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Units</a></li>
+        <li><a href="customfont.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Custom Font</a></li>
+        <li><a href="colors.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Colors</a></li>
+        <li><a href="positioning.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Positioning</a></li>
+        <li><a href="grid.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Grid</a></li>
+        <li><a href="graphics.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Graphics</a></li>
+        <li><a href="table.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Table</a></li>
+        <li><a href="column.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Column</a></li>
+        <li><a href="form.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Form</a></li>
+        <li><a href="math.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Math</a></li>
+        <li><a href="interactive.html"><img src="../images/icons/light-bulb.png" alt="lightbulb"> Interactive</a></li>
+      </ul>
+    </nav>
+    <!--
+      async and defer does not apply to embeded script
+      do not embed scripts unless necessary
+    -->
+    <script>
+      console.log("hello from embedded script between nav and main elements");
+    </script>
+    <main>
+      <div id="date-container">
+        <p>Date:</p>
+        <div id="date">
+        </div>
+      </div>
+      <section id="container">
+        <h1 id="title">Addition</h1>
+        <div id="leftoperand">x
+        </div>
+        <div id="operator">+
+        </div>
+        <div id="rightoperand">y
+        </div>
+        <div id="equal">=
+        </div>
+        <input id="answer" type="text" />
+        <button id="checkbtn">
+          Submit
+        </button>
+        <button id="skipbtn">
+          Skip
+        </button>
+        <button id="hintbtn">
+          Hint
+        </button>
+        <div id="counter"></div>
+        <div id="feedback"></div>
+        <div id="hint"></div>
+      </section>
+    </main>
+    <footer>
+      <address>
+        <a href="mailto:me@memyselfandi.com">me@memyselfandi.com</a>
+        <br>
+        <a href="tel:+15555555555">(555) 555-5555</a>
+        <p>
+          555 Fake Street South
+          <br>
+          My City, ST 12345
+        </p>
+      </address>
+      <p>© 2023 Web Design 1</p>
+      <div>
+        <a href="#top">Go to Top</a>
+      </div>
+    </footer>
+  </body>
+  <script>
+    console.log("hello from embedded script between after the body element");
+  </script>
+</html>

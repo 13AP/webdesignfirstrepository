@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+/* 
+  Font sizing
+*/
+
+#font-examples-outer-section {
+  border: 1px solid black;
+}
+
+#font-example-section {
+  font-size: 1.5em;
+  background-color: lightgreen;
+}
+
+#font-example-section h3,
+#font-examples-outer-section h3,
+#width-examples-outer-section h3 {
+  /* set this to inherit from the root element*/
+  font-size: 2rem;
+  color: red;
+}
+
+.font-example-p {
+  border: 1px dotted blue;
+  margin: 2px;
+}
+
+/* px */
+.font-size-8px {
+  font-size: 8px;
+}
+
+.font-size-16px {
+  font-size: 16px;
+}
+
+.font-size-32px {
+  font-size: 32px;
+}
+
+/* em */
+.font-size-halfem {
+  font-size: .5em;
+}
+
+.font-size-1em {
+  font-size: 1em;
+}
+
+.font-size-2em {
+  font-size: 2em;
+}
+
+/* rem */
+.font-size-halfrem {
+  font-size: .5rem;
+}
+
+.font-size-1rem {
+  font-size: 1rem;
+}
+
+.font-size-2rem {
+  font-size: 2rem;
+}
+
+/* vw */
+.font-size-1vw {
+  font-size: 1vw;
+}
+
+.font-size-2vw {
+  font-size: 2vw;
+}
+
+.font-size-3vw {
+  font-size: 3vw;
+}
+
+.font-size-4vw {
+  font-size: 4vw;
+}
+
+/* 
+  Width sizing
+*/
+
+.width-section {
+  border: 1px solid black;
+}
+
+.width-section div {
+  border: 1px solid red;
+}
+
+/* 
+  reset the margin and padding on the section and div
+*/
+.width-section,
+.width-section>div {
+  /* 
+    only reset the left and right since 
+    width will be used as the example
+  */
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+
+/********************************************************************
+  1) px units
+********************************************************************/
+
+#px-sctn {
+  width: 600px;
+}
+
+#px-sctn-div200 {
+  width: 200px;
+}
+
+#px-sctn-div400 {
+  width: 400px;
+}
+
+#px-sctn-div600 {
+  width: 600px;
+}
+
+#px-sctn-div700 {
+  width: 700px;
+}
+
+/********************************************************************
+    2) % percent units
+    > Percentage values are relative to its parent element
+    > 100% means to span 100% the of space of the parent element
+********************************************************************/
+
+#pct-sctn {
+  width: 50%;
+}
+
+#pct-sctn-div25 {
+  width: 25%;
+}
+
+#pct-sctn-div75 {
+  width: 75%;
+}
+
+#pct-sctn-div100 {
+  width: 100%;
+}
+
+#pct-sctn-div120 {
+  width: 120%;
+}
+
+/********************************************************************
+    3) vw viewport units
+    > vw : relative to 1% of the viewport width
+    > vh : relative to 1% of the viewport height
+********************************************************************/
+
+#vp-sctn {
+  width: 50vw;
+}
+
+#vp-sctn-div-25 {
+  width: 25vw;
+}
+
+#vp-sctn-div-75 {
+  width: 75vw;
+}
+
+#vp-sctn-div-100 {
+  width: 100vw;
+}
+
+#vp-sctn-div-120 {
+  width: 120vw;
+}

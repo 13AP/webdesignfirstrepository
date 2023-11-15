@@ -1,0 +1,30 @@
+Visual Studio Code Exensions
+
+    1. ritwickdey.LiveServer
+        - Reloads webpage in browser when source markup is updated
+            - right click on the file in the explorer or anywhere in the html doc
+            - select 'Open with live server'
+		- Override your default favorite browser
+			- Go to File > Preferences > Settings
+			- In the search bar start typing in the following: Live Server > Settings: Custom Browser
+				- The setting should show up in the list
+					- Use the dropdown to select a browser
+
+    2. vscode-pdf
+        - pdf file viewer
+
+    3. hediet.vscode-drawio
+        - draw.io integration
+        
+    4. stxr.iconfont-preview
+        - to preview TrueType font (ttf) files
+
+How to install Exensions on VS Code
+
+    1. On the left, click on Extensions button (ctrl + shift + x)
+    2. Type in the extension name
+    3. Click on the Install button
+	
+Configure
+
+	- File > Preference > Settings > Exensions

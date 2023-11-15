@@ -126,7 +126,7 @@ function writeDayNameUsingForEachMethod()
 
     var dayStructure = "";
 
-    /* Arry.forEach method
+    /* Array.forEach method
         https://www.w3schools.com/jsref/jsref_foreach.asp
     */
 

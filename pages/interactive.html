@@ -40,12 +40,12 @@
     <section>
       <h2>Greetings</h2>
       <div>
-        <button id="greetFromCommon">
+        <button id="greetFromCommon" type="button">
           Greeting from Common
         </button>
         <div id="commongreeting">
         </div>
-        <button id="greetFromInteractive">
+        <button id="greetFromInteractive" type="button">
           Greeting from Common
         </button>
         <div id="interactivegreeting">
@@ -53,19 +53,27 @@
       </div>
       <h2>Random Number Generation</h2>
       <div>
-        <legend>Random Number</legend>
+        <fieldset>
+          <legend>Random Number</legend>
+          <div id="randomNumber">
+          </div>
+        </fieldset>
         <div id="randomNumber">
         </div>
       </div>
       <div>
-        <legend>Previous Random Number</legend>
+        <fieldset>
+          <legend>Previous Random Number</legend>
+          <div id="previousNumber">
+          </div>
+        </fieldset>
         <div id="previousNumber">
         </div>
       </div>
-      <button id="randomNumberGeneratorStart">
+      <button id="randomNumberGeneratorStart" type="button">
           Start Random Number Generator
       </button>
-      <button id="randomNumberGeneratorStop">
+      <button id="randomNumberGeneratorStop" type="button">
           Stop Random Number Generator
       </button>
     </section>
@@ -91,10 +99,10 @@
         <span>Number of Days:</span>
         <span id="daysCount3"></span>
       </div>
-      <button id="dayListHighlightStart">
+      <button id="dayListHighlightStart" type="button">
           Start Random Day List Highlighting
       </button>
-      <button id="dayListHighlightStop">
+      <button id="dayListHighlightStop" type="button">
           Stop Random Day List Highlighting
       </button>
     </aside>
